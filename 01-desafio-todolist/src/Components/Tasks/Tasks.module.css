@@ -1,0 +1,106 @@
+.taskContainer {
+  margin: 64px auto 0;
+  max-width: 736px;
+}
+
+.taskListEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+  padding: 4rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.taskInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 736px;
+  margin: 0 auto;
+}
+
+.infoTextCreated {
+  font-weight: bold;
+  color: var(--blue-500);
+}
+
+.infoTextDone {
+  font-weight: bold;
+  color: var(--purple-500);
+}
+
+.taskInfoCounter {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.taskListContainer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItemContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.taskItemContainer:hover {
+  border: 1px solid var(--purple-500);
+}
+
+.removeIcon {
+  color: var(--gray-300);
+}
+
+.removeIcon:hover {
+  color: var(--red-500);
+}
+
+.titleTask {
+  flex: 1;
+}
+
+.titleTaskCompleted {
+  flex: 1;
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid var(--blue-500);
+  border-radius: 50%;
+}
+
+.checkbox:checked {
+  accent-color: var(--purple-500);
+  background: var(--purple-500);
+  border: 2px solid transparent;
+  position: relative;
+}
+.checkbox:checked::before {
+  content: "\002714";
+  display: flex;
+  justify-content: center;
+}
